@@ -3,134 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Conheça a RM Construção, empresa de construção civil focada em segurança e qualidade." />
-  <title>RM Construção | Sobre</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="assets/logos/favicon.ico" type="image/png" />
+  <meta name="description" content="Conheça a RM Construção: mais de 10 anos em construção civil, pintura, gesso, drywall, reformas e acabamentos com equipe treinada." />
+  <meta name="theme-color" content="#050505" />
+  <title>RM Construção | Sobre a empresa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="assets/logos/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-
-  <style>
-    /* Ajuste exclusivo da página Sobre: texto institucional alinhado e mais legível */
-    .about-intro .section-head {
-      max-width: 1120px;
-      margin-inline: auto;
-      text-align: center;
-    }
-
-    .about-intro .section-head h1 {
-      max-width: 980px;
-      margin-inline: auto;
-      text-align: center;
-      text-wrap: balance;
-    }
-
-    .about-text-block {
-      width: min(100%, 920px);
-      margin: 34px auto 0;
-      display: grid;
-      gap: 18px;
-      text-align: center;
-    }
-
-    .about-text-block p {
-      max-width: 920px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: clamp(1.04rem, 1.35vw, 1.18rem);
-      line-height: 1.78;
-      letter-spacing: 0.005em;
-    }
-
-    @media (max-width: 650px) {
-      .about-text-block {
-        width: min(100%, 94%);
-        gap: 16px;
-        margin-top: 28px;
-      }
-
-      .about-text-block p {
-        font-size: 0.98rem;
-        line-height: 1.72;
-      }
-    }
-  </style>
 </head>
 <body>
   <header class="site-header" data-header>
-    <a class="logo-link" href="index.html"><img class="site-logo" data-logo src="assets/logos/logo-white.png" alt="RM Construção" /></a>
-    <button class="menu-toggle" data-menu-toggle aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" data-nav><a href="index.html">Início</a><a href="sobre.html" class="active">Sobre</a><a href="projetos.html">Projetos</a><a href="contato.html">Contato</a></nav>
+    <a class="logo-link" href="index.html" aria-label="Página inicial da RM Construção"><img class="site-logo" data-logo src="assets/logos/logo-white.png" alt="RM Construção" width="132" height="72" /></a>
+    <button class="menu-toggle" data-menu-toggle type="button" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" data-nav aria-label="Navegação principal"><a href="index.html">Início</a><a href="sobre.html" class="active">Sobre</a><a href="projetos.html">Projetos</a><a href="contato.html">Contato</a></nav>
   </header>
 
   <main class="page-main">
-    <section class="section-pad about-intro-section">
-      <div class="container about-intro">
-        <div class="section-head reveal">
+    <section class="section-pad page-hero" aria-labelledby="sobre-title">
+      <div class="container page-hero-grid">
+        <div class="reveal">
           <span class="eyebrow">Sobre a RM</span>
-          <h1>Obra bem feita começa com organização, equipe preparada e segurança.</h1>
-          <div class="about-text-block">
-            <p>A Equipe RM é especializada em construção civil, pintura, gesso, drywall, reformas e acabamentos, com mais de 10 anos de experiência no mercado.</p>
-            <p>Atuamos em obras residenciais, comerciais e industriais, entregando qualidade, segurança e compromisso em cada etapa do projeto.</p>
-            <p>Nossa equipe é registrada, qualificada e treinada conforme normas de segurança como NR 35 e NR 18, além de seguir documentações essenciais como PGR, PCMSO e LTCAT.</p>
-            <p>Com obras realizadas para clientes como <strong>Unimagem</strong>, <strong>Orthometric</strong>, <strong>UNIMAR</strong>, <strong>Dori</strong>, <strong>Hospital São Lucas e Renascer</strong>, a Equipe RM se destaca pelo profissionalismo, cumprimento de prazos e alto padrão de acabamento.</p>
+          <h1 id="sobre-title">Obra bem feita começa com organização, equipe preparada e segurança.</h1>
+        </div>
+        <div class="page-copy reveal">
+          <p>A Equipe RM é especializada em construção civil, pintura, gesso, drywall, reformas e acabamentos, com mais de 10 anos de experiência no mercado.</p>
+          <p>Atuamos em obras residenciais, comerciais e industriais, entregando qualidade, segurança e compromisso em cada etapa do projeto.</p>
+          <p>Nossa equipe é registrada, qualificada e treinada conforme normas como NR 35 e NR 18, além de seguir documentações essenciais como PGR, PCMSO e LTCAT.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad company-section" aria-labelledby="empresa-title">
+      <div class="container split-grid">
+        <figure class="premium-image-card reveal">
+          <img src="assets/img/equipe-rm.png" alt="Equipe RM Construção em ambiente de obra profissional" width="860" height="640" loading="lazy" />
+        </figure>
+        <div class="section-head align-left reveal">
+          <span class="eyebrow">Institucional</span>
+          <h2 id="empresa-title">Construção com confiança, prazo e alto padrão de acabamento.</h2>
+          <p>Com obras realizadas para clientes como Unimagem, Orthometric, UNIMAR, Dori, Hospital São Lucas e Renascer, a Equipe RM se destaca pelo profissionalismo, cumprimento de prazos e cuidado nos detalhes.</p>
+          <div class="mini-grid">
+            <article><strong>Residencial</strong><span>Reformas e obras completas.</span></article>
+            <article><strong>Comercial</strong><span>Ambientes funcionais e bem finalizados.</span></article>
+            <article><strong>Industrial</strong><span>Execução técnica com segurança.</span></article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="socios-section section-pad" aria-labelledby="socios-title">
+    <section class="section-pad docs-section" aria-labelledby="docs-title">
       <div class="container">
-        <div class="socios-head reveal">
-          <span class="eyebrow">Equipe RM</span>
-          <h2 id="socios-title">Sócios</h2>
+        <div class="section-head reveal">
+          <span class="eyebrow">Normas e documentos</span>
+          <h2 id="docs-title">Segurança aplicada ao dia a dia da obra.</h2>
+          <p>Treinamento, documentação e controle ajudam a reduzir riscos e aumentam a confiança em cada execução.</p>
         </div>
+        <div class="cards-grid compact-grid">
+          <article class="info-card reveal"><span class="card-number">NR</span><h3>NR 35</h3><p>Atividades em altura com medidas de proteção e prevenção.</p></article>
+          <article class="info-card reveal"><span class="card-number">NR</span><h3>NR 18</h3><p>Condições de segurança no ambiente da construção civil.</p></article>
+          <article class="info-card reveal"><span class="card-number">PGR</span><h3>Gestão de riscos</h3><p>Identificação e controle dos riscos ocupacionais.</p></article>
+          <article class="info-card reveal"><span class="card-number">PCMSO</span><h3>Saúde ocupacional</h3><p>Acompanhamento médico dos trabalhadores.</p></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section-pad socios-section" aria-labelledby="socios-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Liderança</span>
+          <h2 id="socios-title">Sócios presentes no planejamento e na execução.</h2>
+        </div>
         <div class="socios-list">
           <article class="socio-card reveal">
             <div class="socio-copy">
-              <span class="socio-kicker">Prazer</span>
+              <span class="socio-kicker">Sócio proprietário</span>
               <h3>Ronivaldo Batista</h3>
-              <p class="socio-role">Sócio proprietário</p>
-              <div class="socio-info">
-                <strong>Formação</strong>
-                <span>Engenheiro civil</span>
-              </div>
-              <div class="socio-info">
-                <strong>Atuando</strong>
-                <span>No mercado de construção civil há mais de 15 anos.</span>
-              </div>
+              <p>Engenheiro civil com atuação no mercado de construção civil há mais de 15 anos. Lidera com olhar técnico, responsabilidade e foco em qualidade.</p>
             </div>
-            <figure class="socio-photo">
-              <img src="assets/img/fundador-r.png" alt="Ronivaldo Batista, sócio proprietário da RM Construção" />
-            </figure>
+            <figure class="socio-photo"><img src="assets/img/fundador-r.png" alt="Ronivaldo Batista, sócio proprietário da RM Construção" width="620" height="720" loading="lazy" /></figure>
           </article>
 
           <article class="socio-card socio-card-reverse reveal">
             <div class="socio-copy">
-              <span class="socio-kicker">Prazer</span>
+              <span class="socio-kicker">Sócio administrador</span>
               <h3>Matheus Batista</h3>
-              <p class="socio-role">Sócio administrador</p>
-              <div class="socio-info">
-                <strong>Formação</strong>
-                <span>Engenheiro civil</span>
-              </div>
-              <div class="socio-info">
-                <strong>Atuando</strong>
-                <span>No mercado de construção civil há mais de 9 anos.</span>
-              </div>
+              <p>Engenheiro civil com mais de 9 anos de atuação no setor. Atua no acompanhamento, organização e administração dos projetos.</p>
             </div>
-            <figure class="socio-photo">
-              <img src="assets/img/fundador-m.png" alt="Matheus Batista, sócio administrador da RM Construção" />
-            </figure>
+            <figure class="socio-photo"><img src="assets/img/fundador-m.png" alt="Matheus Batista, sócio administrador da RM Construção" width="620" height="720" loading="lazy" /></figure>
           </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-grid"><img data-footer-logo src="assets/logos/logo-white.png" alt="RM Construção" /><p>Segurança, qualidade e responsabilidade.</p><a href="contato.html">Contato</a></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a href="index.html" aria-label="RM Construção"><img data-footer-logo src="assets/logos/logo-white.png" alt="RM Construção" width="132" height="72" /></a>
+      <p>Segurança, qualidade e responsabilidade em cada etapa.</p>
+      <nav aria-label="Links do rodapé"><a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="contato.html">Contato</a></nav>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>

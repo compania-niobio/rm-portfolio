@@ -3,103 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projetos e serviços realizados pela RM Construção." />
-  <title>RM Construção | Projetos</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="assets/logos/favicon.ico" type="image/png" />
+  <meta name="description" content="Portfólio de projetos e serviços da RM Construção: obras, reformas, pintura, gesso, drywall, acabamentos e serviços em altura." />
+  <meta name="theme-color" content="#050505" />
+  <title>RM Construção | Projetos e serviços</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="assets/logos/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-
-  <style>
-    .projetos-intro-section {
-      padding-top: clamp(150px, 16vw, 190px);
-    }
-
-    .projetos-head {
-      max-width: 960px;
-      margin-inline: auto;
-      text-align: center;
-    }
-
-    .projetos-head .eyebrow {
-      margin-inline: auto;
-      margin-bottom: 24px;
-    }
-
-    .projetos-head h1 {
-      max-width: 860px;
-      margin-inline: auto;
-      font-size: clamp(3.4rem, 7.2vw, 6.4rem);
-      line-height: 0.94;
-      letter-spacing: -0.06em;
-      text-align: center;
-      text-wrap: balance;
-    }
-
-    .projetos-head p {
-      max-width: 720px;
-      margin: 28px auto 0;
-      color: var(--muted);
-      font-size: clamp(1.05rem, 1.55vw, 1.25rem);
-      line-height: 1.72;
-      text-align: center;
-      text-wrap: balance;
-    }
-
-    @media (max-width: 900px) {
-      .projetos-intro-section {
-        padding-top: 132px;
-      }
-
-      .projetos-head h1 {
-        max-width: 720px;
-        font-size: clamp(2.85rem, 10vw, 4.9rem);
-        line-height: 0.98;
-      }
-    }
-
-    @media (max-width: 650px) {
-      .projetos-head h1 {
-        font-size: clamp(2.55rem, 13vw, 4rem);
-        line-height: 1;
-      }
-
-      .projetos-head p {
-        max-width: 94%;
-        font-size: 1rem;
-      }
-    }
-  </style>
 </head>
 <body>
   <header class="site-header" data-header>
-    <a class="logo-link" href="index.html"><img class="site-logo" data-logo src="assets/logos/logo-white.png" alt="RM Construção" /></a>
-    <button class="menu-toggle" data-menu-toggle aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" data-nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="projetos.html" class="active">Projetos</a><a href="contato.html">Contato</a></nav>
+    <a class="logo-link" href="index.html" aria-label="Página inicial da RM Construção"><img class="site-logo" data-logo src="assets/logos/logo-white.png" alt="RM Construção" width="132" height="72" /></a>
+    <button class="menu-toggle" data-menu-toggle type="button" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" data-nav aria-label="Navegação principal"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="projetos.html" class="active">Projetos</a><a href="contato.html">Contato</a></nav>
   </header>
 
   <main class="page-main">
-    <section class="section-pad projetos-intro-section">
-      <div class="container">
-        <div class="section-head projetos-head reveal">
-          <span class="eyebrow">Projetos</span>
-          <h1>Serviços executados com padrão profissional.</h1>
-          <p>
-            Conheça alguns dos serviços realizados pela Equipe RM em obras, reformas,
-            acabamentos e soluções técnicas para construção civil.
-          </p>
+    <section class="section-pad page-hero projects-hero" aria-labelledby="projetos-title">
+      <div class="container page-hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Portfólio RM</span>
+          <h1 id="projetos-title">Serviços executados com padrão profissional.</h1>
         </div>
-        <div class="project-grid">
-          <article class="project-card reveal"><h3>Obras e reformas</h3><p>Execução, acompanhamento e organização de obra.</p></article>
-          <article class="project-card reveal"><h3>Acabamentos</h3><p>Detalhes finais com cuidado visual e técnico.</p></article>
-          <article class="project-card reveal"><h3>Serviços em altura</h3><p>Equipe preparada para atividades com segurança.</p></article>
+        <div class="page-copy reveal">
+          <p>Conheça categorias de serviços realizados pela RM Construção em obras residenciais, comerciais e industriais.</p>
+          <p>Cada card representa uma frente de atuação com espaço para imagens reais, descrição do serviço e detalhes do projeto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad gallery-section" aria-label="Categorias de projetos">
+      <div class="container">
+        <div class="project-gallery">
+          <article class="work-card reveal" data-project-card tabindex="0">
+            <img src="assets/img/projeto-obras.png" alt="Obra e reforma executada pela RM Construção" width="720" height="520" loading="lazy" />
+            <div><span>01</span><h2>Obras e reformas</h2><p>Execução, planejamento e organização para transformar ambientes com segurança.</p></div>
+          </article>
+          <article class="work-card reveal" data-project-card tabindex="0">
+            <img src="assets/img/projeto-pintura.png" alt="Serviço de pintura profissional" width="720" height="520" loading="lazy" />
+            <div><span>02</span><h2>Pintura</h2><p>Preparação de superfície, acabamento limpo e resultado visual profissional.</p></div>
+          </article>
+          <article class="work-card reveal" data-project-card tabindex="0">
+            <img src="assets/img/projeto-drywall.png" alt="Gesso e drywall em ambiente moderno" width="720" height="520" loading="lazy" />
+            <div><span>03</span><h2>Gesso e drywall</h2><p>Forros, divisórias e detalhes que tornam o projeto mais funcional e elegante.</p></div>
+          </article>
+          <article class="work-card reveal" data-project-card tabindex="0">
+            <img src="assets/img/projeto-acabamento.png" alt="Acabamento de obra com alto padrão" width="720" height="520" loading="lazy" />
+            <div><span>04</span><h2>Acabamentos</h2><p>Detalhes finais com precisão técnica e cuidado visual.</p></div>
+          </article>
+          <article class="work-card reveal" data-project-card tabindex="0">
+            <img src="assets/img/projeto-altura.png" alt="Serviços em altura com segurança" width="720" height="520" loading="lazy" />
+            <div><span>05</span><h2>Serviços em altura</h2><p>Atuação técnica com equipe preparada, treinamento e medidas preventivas.</p></div>
+          </article>
+          <article class="work-card reveal" data-project-card tabindex="0">
+            <img src="assets/img/projeto-industrial.png" alt="Obra comercial e industrial" width="720" height="520" loading="lazy" />
+            <div><span>06</span><h2>Comerciais e industriais</h2><p>Execução para empresas que precisam de organização, prazo e responsabilidade.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad carousel-section" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-head align-left reveal">
+          <span class="eyebrow">Galeria</span>
+          <h2 id="galeria-title">Espaço para obras realizadas.</h2>
+          <p>Carrossel leve para destacar imagens reais dos projetos e criar uma apresentação mais dinâmica.</p>
+        </div>
+
+        <div class="carousel reveal" data-carousel>
+          <button class="carousel-btn prev" type="button" data-carousel-prev aria-label="Projeto anterior">‹</button>
+          <div class="carousel-track" data-carousel-track>
+            <figure><img src="assets/img/projeto-obras.png" alt="Projeto de obra e reforma" /><figcaption>Obras e reformas</figcaption></figure>
+            <figure><img src="assets/img/projeto-pintura.png" alt="Projeto de pintura" /><figcaption>Pintura</figcaption></figure>
+            <figure><img src="assets/img/projeto-drywall.png" alt="Projeto de gesso e drywall" /><figcaption>Gesso e drywall</figcaption></figure>
+            <figure><img src="assets/img/projeto-acabamento.png" alt="Projeto de acabamento" /><figcaption>Acabamentos</figcaption></figure>
+          </div>
+          <button class="carousel-btn next" type="button" data-carousel-next aria-label="Próximo projeto">›</button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-grid"><img data-footer-logo src="assets/logos/logo-white.png" alt="RM Construção" /><p>Portfólio de obras e serviços.</p><a href="contato.html">Contato</a></div></footer>
+  <dialog class="project-modal" data-project-modal aria-labelledby="modal-title">
+    <button class="modal-close" type="button" data-modal-close aria-label="Fechar detalhes">×</button>
+    <h2 id="modal-title">Projeto RM Construção</h2>
+    <p data-modal-text>Detalhes do projeto.</p>
+    <a class="btn btn-primary" href="contato.html">Solicitar orçamento</a>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a href="index.html" aria-label="RM Construção"><img data-footer-logo src="assets/logos/logo-white.png" alt="RM Construção" width="132" height="72" /></a>
+      <p>Portfólio de obras, reformas e acabamentos.</p>
+      <nav aria-label="Links do rodapé"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></nav>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>
