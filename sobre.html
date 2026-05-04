@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conheça a RM Construção, empresa de construção civil focada em segurança e qualidade." />
+  <title>RM Construção | Sobre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    /* Ajuste exclusivo da página Sobre: texto institucional alinhado e mais legível */
+    .about-intro .section-head {
+      max-width: 1120px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .about-intro .section-head h1 {
+      max-width: 980px;
+      margin-inline: auto;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    .about-text-block {
+      width: min(100%, 920px);
+      margin: 34px auto 0;
+      display: grid;
+      gap: 18px;
+      text-align: center;
+    }
+
+    .about-text-block p {
+      max-width: 920px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(1.04rem, 1.35vw, 1.18rem);
+      line-height: 1.78;
+      letter-spacing: 0.005em;
+    }
+
+    @media (max-width: 650px) {
+      .about-text-block {
+        width: min(100%, 94%);
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .about-text-block p {
+        font-size: 0.98rem;
+        line-height: 1.72;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="logo-link" href="index.html"><img class="site-logo" data-logo src="assets/logos/logo-white.png" alt="RM Construção" /></a>
+    <button class="menu-toggle" data-menu-toggle aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" data-nav><a href="index.html">Início</a><a href="sobre.html" class="active">Sobre</a><a href="projetos.html">Projetos</a><a href="contato.html">Contato</a></nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section-pad about-intro-section">
+      <div class="container about-intro">
+        <div class="section-head reveal">
+          <span class="eyebrow">Sobre a RM</span>
+          <h1>Obra bem feita começa com organização, equipe preparada e segurança.</h1>
+          <div class="about-text-block">
+            <p>A Equipe RM é especializada em construção civil, pintura, gesso, drywall, reformas e acabamentos, com mais de 10 anos de experiência no mercado.</p>
+            <p>Atuamos em obras residenciais, comerciais e industriais, entregando qualidade, segurança e compromisso em cada etapa do projeto.</p>
+            <p>Nossa equipe é registrada, qualificada e treinada conforme normas de segurança como NR 35 e NR 18, além de seguir documentações essenciais como PGR, PCMSO e LTCAT.</p>
+            <p>Com obras realizadas para clientes como <strong>Unimagem</strong>, <strong>Orthometric</strong>, <strong>UNIMAR</strong>, <strong>Dori</strong>, <strong>Hospital São Lucas e Renascer</strong>, a Equipe RM se destaca pelo profissionalismo, cumprimento de prazos e alto padrão de acabamento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="socios-section section-pad" aria-labelledby="socios-title">
+      <div class="container">
+        <div class="socios-head reveal">
+          <span class="eyebrow">Equipe RM</span>
+          <h2 id="socios-title">Sócios</h2>
+        </div>
+
+        <div class="socios-list">
+          <article class="socio-card reveal">
+            <div class="socio-copy">
+              <span class="socio-kicker">Prazer</span>
+              <h3>Ronivaldo Batista</h3>
+              <p class="socio-role">Sócio proprietário</p>
+              <div class="socio-info">
+                <strong>Formação</strong>
+                <span>Engenheiro civil</span>
+              </div>
+              <div class="socio-info">
+                <strong>Atuando</strong>
+                <span>No mercado de construção civil há mais de 15 anos.</span>
+              </div>
+            </div>
+            <figure class="socio-photo">
+              <img src="assets/img/fundador-r.png" alt="Ronivaldo Batista, sócio proprietário da RM Construção" />
+            </figure>
+          </article>
+
+          <article class="socio-card socio-card-reverse reveal">
+            <div class="socio-copy">
+              <span class="socio-kicker">Prazer</span>
+              <h3>Matheus Batista</h3>
+              <p class="socio-role">Sócio administrador</p>
+              <div class="socio-info">
+                <strong>Formação</strong>
+                <span>Engenheiro civil</span>
+              </div>
+              <div class="socio-info">
+                <strong>Atuando</strong>
+                <span>No mercado de construção civil há mais de 9 anos.</span>
+              </div>
+            </div>
+            <figure class="socio-photo">
+              <img src="assets/img/fundador-m.png" alt="Matheus Batista, sócio administrador da RM Construção" />
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><img data-footer-logo src="assets/logos/logo-white.png" alt="RM Construção" /><p>Segurança, qualidade e responsabilidade.</p><a href="contato.html">Contato</a></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projetos e serviços realizados pela RM Construção." />
+  <title>RM Construção | Projetos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    .projetos-intro-section {
+      padding-top: clamp(150px, 16vw, 190px);
+    }
+
+    .projetos-head {
+      max-width: 960px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .projetos-head .eyebrow {
+      margin-inline: auto;
+      margin-bottom: 24px;
+    }
+
+    .projetos-head h1 {
+      max-width: 860px;
+      margin-inline: auto;
+      font-size: clamp(3.4rem, 7.2vw, 6.4rem);
+      line-height: 0.94;
+      letter-spacing: -0.06em;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    .projetos-head p {
+      max-width: 720px;
+      margin: 28px auto 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 1.55vw, 1.25rem);
+      line-height: 1.72;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    @media (max-width: 900px) {
+      .projetos-intro-section {
+        padding-top: 132px;
+      }
+
+      .projetos-head h1 {
+        max-width: 720px;
+        font-size: clamp(2.85rem, 10vw, 4.9rem);
+        line-height: 0.98;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .projetos-head h1 {
+        font-size: clamp(2.55rem, 13vw, 4rem);
+        line-height: 1;
+      }
+
+      .projetos-head p {
+        max-width: 94%;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="logo-link" href="index.html"><img class="site-logo" data-logo src="assets/logos/logo-white.png" alt="RM Construção" /></a>
+    <button class="menu-toggle" data-menu-toggle aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" data-nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="projetos.html" class="active">Projetos</a><a href="contato.html">Contato</a></nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section-pad projetos-intro-section">
+      <div class="container">
+        <div class="section-head projetos-head reveal">
+          <span class="eyebrow">Projetos</span>
+          <h1>Serviços executados com padrão profissional.</h1>
+          <p>
+            Conheça alguns dos serviços realizados pela Equipe RM em obras, reformas,
+            acabamentos e soluções técnicas para construção civil.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal"><h3>Obras e reformas</h3><p>Execução, acompanhamento e organização de obra.</p></article>
+          <article class="project-card reveal"><h3>Acabamentos</h3><p>Detalhes finais com cuidado visual e técnico.</p></article>
+          <article class="project-card reveal"><h3>Serviços em altura</h3><p>Equipe preparada para atividades com segurança.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><img data-footer-logo src="assets/logos/logo-white.png" alt="RM Construção" /><p>Portfólio de obras e serviços.</p><a href="contato.html">Contato</a></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
